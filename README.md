@@ -1,6 +1,6 @@
 # gojek_replicate
 
-A new Flutter project.
+A replicate of Gojek's Login UI in Flutter.
 
 ## Getting Started
 
