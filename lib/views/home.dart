@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gojek_replicate/calculator.dart';
+import 'package:gojek_replicate/views/calculator.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
