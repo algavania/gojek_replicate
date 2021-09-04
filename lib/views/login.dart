@@ -50,8 +50,8 @@ class Login extends StatelessWidget {
                   ),
                 )),
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Home()));
+                  Navigator.pushAndRemoveUntil(
+                      context, MaterialPageRoute(builder: (context) => Home()), (Route<dynamic> route) => false);
                 },
               )),
               SizedBox(height: 10),

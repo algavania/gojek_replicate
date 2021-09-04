@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gojek_replicate/views/calculator.dart';
+import 'package:gojek_replicate/views/navigations/calculator.dart';
+import 'package:gojek_replicate/views/navigations/soccer.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class Home extends StatelessWidget {
             bottom: TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.calculate)),
-                Tab(icon: Icon(Icons.directions_transit)),
+                Tab(icon: Icon(Icons.sports_soccer)),
                 Tab(icon: Icon(Icons.directions_bike)),
               ],
             ),
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
           body: TabBarView(
             children: [
               Tab(child: Calculator()),
-              Tab(icon: Icon(Icons.directions_transit)),
+              Tab(child: SoccerPage()),
               Tab(icon: Icon(Icons.directions_bike)),
             ],
           ),
