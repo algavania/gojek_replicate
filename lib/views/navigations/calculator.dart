@@ -7,7 +7,11 @@ class Calculator extends StatefulWidget {
   _CalculatorState createState() => _CalculatorState();
 }
 
-class _CalculatorState extends State<Calculator> {
+class _CalculatorState extends State<Calculator> with AutomaticKeepAliveClientMixin<Calculator> {
+
+  @override
+  bool get wantKeepAlive => true;
+
   TextEditingController _firstNumberController =
       new TextEditingController(text: '0');
   TextEditingController _secondNumberController =

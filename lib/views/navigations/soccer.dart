@@ -17,13 +17,16 @@ class SoccerPage extends StatefulWidget {
   _SoccerPageState createState() => _SoccerPageState();
 }
 
-class _SoccerPageState extends State<SoccerPage> {
+class _SoccerPageState extends State<SoccerPage> with AutomaticKeepAliveClientMixin<SoccerPage> {
   late List<TeamModel> allList = [];
   late List<TeamModel> list = [];
   late List<dynamic> data;
   bool isLoading = false;
   String query = '';
   String hintText = 'Search...';
+
+  @override
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {
